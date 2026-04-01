@@ -275,12 +275,22 @@ def margin_chart(df: pd.DataFrame) -> go.Figure:
 # ── Sidebar ───────────────────────────────────────────────────────────────────
 
 def sidebar():
-    st.sidebar.markdown(f"""
-    <div style="padding:16px 0 8px 0; text-align:center;">
-        <div style="font-size:1.4rem; font-weight:800; color:#00AECB; letter-spacing:-0.02em; font-family:'Nunito Sans',sans-serif;">
-            Alpha FMC
-        </div>
-        <div style="font-size:0.72rem; color:#8698AF; margin-top:3px; letter-spacing:0.04em; text-transform:uppercase;">
+    st.sidebar.markdown("""
+    <div style="padding:18px 0 10px 0; text-align:center;">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 64" width="160" height="52">
+          <!-- Icon mark: stacked bar chart -->
+          <rect x="8"  y="28" width="12" height="24" rx="2" fill="#00AECB"/>
+          <rect x="24" y="18" width="12" height="34" rx="2" fill="#00AECB" opacity="0.8"/>
+          <rect x="40" y="8"  width="12" height="44" rx="2" fill="#00AECB" opacity="0.6"/>
+          <!-- Diagonal accent line -->
+          <line x1="10" y1="26" x2="50" y2="6" stroke="#C9A84C" stroke-width="2" stroke-linecap="round"/>
+          <!-- Wordmark -->
+          <text x="62" y="32" font-family="'Nunito Sans', Arial, sans-serif"
+                font-size="18" font-weight="800" fill="#FFFFFF" letter-spacing="-0.5">Alpha</text>
+          <text x="62" y="50" font-family="'Nunito Sans', Arial, sans-serif"
+                font-size="18" font-weight="800" fill="#00AECB" letter-spacing="-0.5">FMC</text>
+        </svg>
+        <div style="font-size:0.65rem; color:#8698AF; margin-top:4px; letter-spacing:0.1em; text-transform:uppercase;">
             Portfolio Intelligence
         </div>
     </div>
