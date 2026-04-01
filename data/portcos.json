@@ -1,0 +1,47 @@
+[
+  {
+    "portco_id": "NXH",
+    "portco_name": "Nexora Health",
+    "sector": "Healthcare",
+    "geography": "UK",
+    "stage": "Growth",
+    "currency": "GBP",
+    "symbol": "\u00a3"
+  },
+  {
+    "portco_id": "CLG",
+    "portco_name": "Caliber Logistics",
+    "sector": "Industrials",
+    "geography": "Germany",
+    "stage": "Buyout",
+    "currency": "EUR",
+    "symbol": "\u20ac"
+  },
+  {
+    "portco_id": "PRD",
+    "portco_name": "Prism Digital",
+    "sector": "TMT",
+    "geography": "UK",
+    "stage": "Growth",
+    "currency": "GBP",
+    "symbol": "\u00a3"
+  },
+  {
+    "portco_id": "VRE",
+    "portco_name": "Verdant Energy",
+    "sector": "Renewables",
+    "geography": "Spain",
+    "stage": "Infrastructure",
+    "currency": "EUR",
+    "symbol": "\u20ac"
+  },
+  {
+    "portco_id": "HLC",
+    "portco_name": "Halo Consumer",
+    "sector": "Consumer",
+    "geography": "France",
+    "stage": "Buyout",
+    "currency": "EUR",
+    "symbol": "\u20ac"
+  }
+]

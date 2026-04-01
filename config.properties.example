@@ -1,0 +1,14 @@
+[ai]
+# Switch between: anthropic | alphagpt
+provider = alphagpt
+
+[anthropic]
+# Leave blank to use the ANTHROPIC_API_KEY environment variable instead.
+api_key =
+model = claude-sonnet-4-20250514
+
+[alphagpt]
+# Leave blank to use the ALPHAGPT_API_KEY environment variable instead.
+api_key =
+base_url = https://alphagpt.alphafmc.com/api/v1/
+model = o4-mini-alpha

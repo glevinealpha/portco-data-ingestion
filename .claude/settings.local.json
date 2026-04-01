@@ -1,0 +1,30 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p \"C:/Users/GuyLevine/OneDrive - Alpha FMC/Documents/Claude_Code/portco_data_ingestion/data/db\")",
+      "Bash(mkdir -p \"C:/Users/GuyLevine/OneDrive - Alpha FMC/Documents/Claude_Code/portco_data_ingestion/data/demo_pdfs\")",
+      "Bash(mkdir -p \"C:/Users/GuyLevine/OneDrive - Alpha FMC/Documents/Claude_Code/portco_data_ingestion/scripts\")",
+      "Bash(mkdir -p \"C:/Users/GuyLevine/OneDrive - Alpha FMC/Documents/Claude_Code/portco_data_ingestion/pipeline\")",
+      "Bash(mkdir -p \"C:/Users/GuyLevine/OneDrive - Alpha FMC/Documents/Claude_Code/portco_data_ingestion/reports\")",
+      "Bash(pip install:*)",
+      "Bash(python scripts/generate_demo_data.py)",
+      "Bash(python pipeline/store.py)",
+      "Bash(python reports/generator.py --period \"Q4 2024\" --no-ai)",
+      "Bash(python -c \"import json; d=json.load\\(open\\(''''data/financials.json''''\\)\\); print\\(f''''{len\\(d\\)} records, portcos: {list\\(set\\(r[\"\"portco_name\"\"] for r in d\\)\\)}''''\\)\")",
+      "Bash(python -c \"from pipeline.store import get_latest_records; r=get_latest_records\\(\\); print\\(f''Latest records: {len\\(r\\)}''\\); [print\\(f''  {x[\"\"portco_name\"\"]:20s} {x[\"\"period\"\"]:8s} Rev={x[\"\"currency\"\"]}{x[\"\"revenue\"\"]:,.0f}k EBITDA={x[\"\"ebitda_margin\"\"]:.1f}%''\\) for x in r]\")",
+      "Bash(streamlit run:*)",
+      "Bash(python -m streamlit --version)",
+      "Bash(where streamlit:*)",
+      "Bash(python -m streamlit run dashboard/app.py --server.headless true)",
+      "WebFetch(domain:alphafmc.com)",
+      "Bash(curl -s \"https://alphafmc.com/\")",
+      "Bash(curl -s \"https://alphafmc.com/wp-content/litespeed/css/1/ba781ccf6dce8b7dc38e96f8fd8596cf.css\")",
+      "Bash(grep -oE \"\\(button|\\\\.btn|\\\\.cta\\)[^{]*\\\\{[^}]{0,200}\\\\}\")",
+      "Bash(grep -oE \"\\\\.block-link[^{]*\\\\{[^}]{0,300}\\\\}\")",
+      "Bash(grep -oE \"\\(\\\\.container|\\\\.wrapper|\\\\.padding|\\\\.spacing\\)[^{]*\\\\{[^}]{0,150}\\\\}\")",
+      "Bash(grep -oE \"\\\\.\\(white|green|red|pink|purple\\)[^{]*\\\\{[^}]{0,200}\\\\}\")",
+      "Bash(python -m streamlit run dashboard/app.py --server.headless true --server.port 8501)",
+      "Bash(gh auth:*)"
+    ]
+  }
+}
