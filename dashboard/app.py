@@ -53,9 +53,9 @@ st.markdown(f"""
     /* Main background */
     .stApp {{ background-color: #F3F5F7; }}
 
-    /* Sidebar — dark navy, force all text white */
+    /* Sidebar — red background, force all text white */
     section[data-testid="stSidebar"] {{
-        background-color: {NAVY};
+        background-color: #8B0000;
     }}
     section[data-testid="stSidebar"] *,
     section[data-testid="stSidebar"] p,
