@@ -1,4 +1,4 @@
-# AlphaFMC — Portfolio Data Pipeline Demo
+# AlphaFMC — Portfolio Data Pipeline
 
 A self-contained demo for AlphaFMC's private markets division. Simulates a full portco
 financial data ingestion pipeline: PDF generation → Claude extraction → SQLite store →
